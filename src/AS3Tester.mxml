@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application
+        xmlns:mx="http://www.adobe.com/2006/mxml"
+        layout="absolute"
+        top="50%"
+        left="50%"
+        width="800"
+        height="600"
+        frameRate="30"
+        applicationComplete="setup()">
+
+    <mx:Script><![CDATA[
+
+        import mx.core.*
+
+        private var main:PerformanceTester;
+        private var ui : UIComponent = new UIComponent();
+
+        public function setup() : void
+        {
+
+            addChild(ui);
+
+            main = new PerformanceTester();
+            //ui.addChild(main);
+        }
+
+        ]]></mx:Script>
+</mx:Application>
